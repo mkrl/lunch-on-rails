@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  username: MyString
+  name: MyString
+  password_digest: MyString
+  lunch_status: 1
+  lastlunch: 2018-01-23 00:11:43
+  delayed: 1
+  lunch_count: 1
+
+two:
+  username: MyString
+  name: MyString
+  password_digest: MyString
+  lunch_status: 1
+  lastlunch: 2018-01-23 00:11:43
+  delayed: 1
+  lunch_count: 1
