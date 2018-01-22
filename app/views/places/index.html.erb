@@ -1,0 +1,19 @@
+<h1>Places to go</h1>
+ 
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Rating</th>
+  </tr>
+ 
+  <% @places.each do |place| %>
+    <tr>
+      <td><%= place.name %></td>
+      <td><%= place.rating %></td>
+      <td><%= link_to 'Show', place_path(place) %></td>
+    </tr>
+  <% end %>
+</table>
+
+
+<%= link_to 'Add place', new_place_path %>
