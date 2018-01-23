@@ -27,9 +27,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.11'
 
-# Template
 
-gem 'gentelella-rails'
+# Bootstrap 4
+gem 'bootstrap', '~> 4.0.0'
 
 
 # Use Capistrano for deployment

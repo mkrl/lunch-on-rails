@@ -13,7 +13,4 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
-
-//= require gentelella
-//= require gentelella-custom
+//= require_tree
