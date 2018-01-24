@@ -28,8 +28,14 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.11'
 
 
-# Bootstrap 4
+# Styling
 gem 'bootstrap', '~> 4.0.0'
+
+# Third-party front-end modules
+gem 'momentjs-rails'
+gem 'magnific-popup-rails', '~> 1.1.0'
+gem 'jquery-easing-rails'
+
 
 
 # Use Capistrano for deployment
