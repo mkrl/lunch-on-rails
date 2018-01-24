@@ -13,9 +13,9 @@
 //= require jquery3
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree
 //= require jquery.easing
 //= require magnific-popup
 //= require moment
 //= require popper
 //= require bootstrap
+//= require_tree
