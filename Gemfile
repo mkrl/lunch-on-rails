@@ -27,16 +27,14 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.11'
 
-
 # Styling
 gem 'bootstrap', '~> 4.0.0'
+gem 'font-awesome-rails'
 
 # Third-party front-end modules
 gem 'momentjs-rails'
 gem 'magnific-popup-rails', '~> 1.1.0'
 gem 'jquery-easing-rails'
-
-
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
