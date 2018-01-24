@@ -18,4 +18,4 @@
 //= require magnific-popup
 //= require moment
 //= require popper
-//= require bootstrap-sprockets
+//= require bootstrap
