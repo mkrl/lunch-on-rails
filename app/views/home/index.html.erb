@@ -47,7 +47,9 @@
           </div>
           <div class="col-lg-8 mx-auto">
             <p class="text-faded mb-5" id="countlunchdown">Take your time</p>
+			<% if logged_in? %>
             <a class="btn btn-primary btn-xl open-popup-link" href="#launchlunch">I'm going now</a>
+			<% end %>
           </div>
 			<div id="launchlunch" class="white-popup mfp-hide">
 			  <h1 class="text-center">Pick a place to go</h1>
