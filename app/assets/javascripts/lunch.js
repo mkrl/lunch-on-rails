@@ -75,6 +75,13 @@ $(document).on('turbolinks:load', function() {
 	  midClick: true, 
 	  closeBtnInside: false
 	});
+	
+  $('.open-ajax-link').magnificPopup({
+	  type:'ajax',
+	  midClick: true, 
+	  mainClass: "loginpopup",
+	  closeBtnInside: false
+	});
   
   
   $('.popup-gallery').magnificPopup({
