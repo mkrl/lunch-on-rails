@@ -79,7 +79,8 @@ $(document).on('turbolinks:load', function() {
   $('.open-ajax-link').magnificPopup({
 	  type:'ajax',
 	  midClick: true, 
-	  mainClass: "loginpopup",
+	  closeOnContentClick: false,
+	  closeOnBgClick: false,
 	  closeBtnInside: false
 	});
   
