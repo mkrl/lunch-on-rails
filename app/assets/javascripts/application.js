@@ -18,5 +18,4 @@
 //= require bootstrap-sprockets
 //= require magnific-popup
 //= require moment
-//= require popper
 //= require_tree .
