@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  placeid: 1
+  userid: 1
+  price: 1
+  location: 1
+  foodamount: 1
+  foodquality: 1
+
+two:
+  placeid: 1
+  userid: 1
+  price: 1
+  location: 1
+  foodamount: 1
+  foodquality: 1

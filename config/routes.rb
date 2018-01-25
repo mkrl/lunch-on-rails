@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   resources :users
+
+  resources :places, shallow: true do
+    resources :ratings
+  end
+
   root to: 'visitors#index'
   get '/auth/:provider/callback' => 'sessions#create'
   get '/signin' => 'sessions#new', :as => :signin
