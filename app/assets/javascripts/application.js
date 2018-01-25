@@ -12,5 +12,11 @@
 //
 //= require jquery
 //= require rails-ujs
+//= require turbolinks
+//= require jquery.easing
+//= require bootstrap
 //= require bootstrap-sprockets
+//= require magnific-popup
+//= require moment
+//= require popper
 //= require_tree .
