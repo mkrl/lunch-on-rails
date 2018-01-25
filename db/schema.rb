@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180124145802) do
+ActiveRecord::Schema.define(version: 20180125043023) do
 
   create_table "users", force: :cascade do |t|
     t.string "name"
@@ -18,6 +18,12 @@ ActiveRecord::Schema.define(version: 20180124145802) do
     t.string "uid"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "lunchstatus"
+    t.integer "delayed"
+    t.datetime "lastlunch"
+    t.integer "lunchtotal"
+    t.integer "average_lunch"
+    t.integer "lastlunchplace"
   end
 
 end
