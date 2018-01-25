@@ -1,21 +1,25 @@
 class SessionsController < ApplicationController
+
   def new
+    redirect_to '/auth/google_oauth2'
   end
-  
+
   def create
-    worker = Worker.find_by(username: params[:username])
-    if worker && worker.authenticate(params[:password])
-      session[:worker_id] = worker.id
-      redirect_to root_url, notice: 'Logged in!'
-    else
-      flash.now.alert = 'Username or password is invalid'
-      render :new
-    end
-  end  
-  
+    auth = request.env["omniauth.auth"]
+    user = User.where(:provider => auth['provider'],
+                      :uid => auth['uid'].to_s).first || User.create_with_omniauth(auth)
+    reset_session
+    session[:user_id] = user.id
+    redirect_to root_url, :notice => 'Signed in!'
+  end
+
   def destroy
-    session[:worker_id] = nil
-    redirect_to root_url, notice: 'Logged out!'
-  end  
-  
+    reset_session
+    redirect_to root_url, :notice => 'Signed out!'
+  end
+
+  def failure
+    redirect_to root_url, :alert => "Authentication error: #{params[:message].humanize}"
+  end
+
 end

@@ -1,15 +1,8 @@
 Rails.application.routes.draw do
-  get 'sessions/new'
-
-  get 'workers/new'
-  
-  get 'signup', to: 'workers#new', as: 'signup'
-
-  get 'home/index'
- 
-  resources :places
-  resources :workers
-  resources :sessions
- 
-  root 'home#index'
+  resources :users
+  root to: 'visitors#index'
+  get '/auth/:provider/callback' => 'sessions#create'
+  get '/signin' => 'sessions#new', :as => :signin
+  get '/signout' => 'sessions#destroy', :as => :signout
+  get '/auth/failure' => 'sessions#failure'
 end
