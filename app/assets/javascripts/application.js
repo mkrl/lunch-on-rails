@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require jquery.easing
 //= require popper
+//= require tether
 //= require bootstrap
 //= require magnific-popup
 //= require moment

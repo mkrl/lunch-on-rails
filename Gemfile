@@ -30,6 +30,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'jquery-rails'
 gem 'bootstrap', '= 4.0.0.alpha6'
 gem 'popper_js', '~> 1.12.9'
+gem 'tether-rails'
 gem 'font-awesome-rails'
 gem 'momentjs-rails'
 gem 'magnific-popup-rails', '~> 1.1.0'
