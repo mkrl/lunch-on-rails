@@ -1,0 +1,7 @@
+<h1> Add a place</h1>
+<%= form_for @place, url: places_path do |f| %>
+  <p><%= f.text_field :name %></p>
+  <p><%= f.text_field :address %></p>
+  <p><%= f.text_field :description %></p>
+  <p><%= f.submit "Add a place" %></p>
+<% end %>
